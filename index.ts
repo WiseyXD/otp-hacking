@@ -31,8 +31,7 @@ const sendOTP = async (otp: number): Promise<boolean> => {
       Accept: "application/json",
       "Accept-Language": "en-US,en;q=0.5",
       "Accept-Encoding": "gzip, deflate, br, zstd",
-      Authorization:
-        "Bearer df5e5edc13e712126cbd4a73fe7131c863ef5ba6f086b75f2b2722de42b5049f",
+      Authorization: `Bearer ${process.env.TOKEN}`,
       "Content-Type": "application/x-www-form-urlencoded",
       Origin: "https://app.collegepond.com",
       "Sec-GPC": "1",
